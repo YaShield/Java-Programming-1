@@ -1,0 +1,34 @@
+Write an application that asks the user to enter two integers, obtains them from the user and displays the larger number followed by 
+the words "is larger". If the numbers are equal, print the message "These numbers are equal".
+
+
+import java.util.Scanner;
+public class Question2 
+{
+    public static void main(String[] agrs)
+    {
+        int num1, num2;
+        
+        Scanner input = new Scanner (System.in); 
+        
+        System.out.printf("Enter an integer number: ");
+        num1 = input.nextInt();
+        
+        System.out.printf("Enter an integer number: ");
+        num2 = input.nextInt();
+        
+        if (num1 > num2)
+        {
+             System.out.printf("Number1 is larger");
+        }
+        if (num2 > num1)
+        {
+            System.out.printf("Number2 is larger");
+        }
+              
+        if (num1 == num2 || num2 == num1)
+        {
+            System.out.printf("Numbers are Equal");
+        }
+    }
+}
