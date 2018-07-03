@@ -1,0 +1,37 @@
+Write an application that displays a checkerboard pattern, as follows:
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+
+import java.util.Scanner;
+
+public class Question6
+{
+    
+    public static void main(String[] args)
+    {
+        Scanner user = new Scanner(System.in);
+        
+        int diameter,radius;
+        double circumference, area, pie = 3.14159;
+       
+        System.out.println("Enter the radius: ");
+        radius = user.nextInt();
+        
+        diameter = 2 * radius;
+        System.out.printf("diameter is %d%n", diameter);
+        
+        circumference = 2 * radius * pie;
+        System.out.printf("circumference is %.2f%n", circumference);
+         
+         
+        area = pie * ((radius * radius));
+        System.out.printf("area is %.2f%n", area);
+    }
+    
+}
