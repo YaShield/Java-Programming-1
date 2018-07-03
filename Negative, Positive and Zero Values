@@ -1,0 +1,77 @@
+Write a program that inputs five numbers and determines
+and prints the number of negative numbers input, the number of positive numbers input and the number of zeros input.
+
+
+import java.util.Scanner;
+ 
+public class Question10
+{
+    public static void main (String [] args) {
+ 
+ Scanner value = new Scanner (System.in);
+ 
+        int num1;
+ int num2;
+ int num3;
+ int num4;
+ int num5; 
+        int PositiveNum = 0; 
+        int ZeroNum = 0; 
+        int NegativeNum = 0;
+         
+        System.out.print ("Enter Your First Number: ");
+        num1 = value.nextInt();
+        System.out.print ("Enter Your Second Number: ");
+        num2 = value.nextInt();
+        System.out.print ("Enter Your Third Number: ");
+        num3 = value.nextInt();
+        System.out.print ("Enter Your Fourth Number: ");
+        num4 = value.nextInt();
+        System.out.print ("Enter Your Fifth Number: ");
+        num5 = value.nextInt();
+         
+     
+         
+        if (num1 < 0) 
+            NegativeNum = NegativeNum + 1;
+        if (num2 < 0) 
+            NegativeNum = NegativeNum + 1;
+        if (num3 < 0) 
+            NegativeNum = NegativeNum + 1;
+        if (num4 < 0) 
+            NegativeNum = NegativeNum + 1;
+        if (num5 < 0) 
+            NegativeNum = NegativeNum + 1;
+ 
+         
+        if (num1 > 0) 
+            PositiveNum = PositiveNum + 1;
+        if (num2 > 0) 
+            PositiveNum = PositiveNum + 1;
+        if (num3 > 0) 
+            PositiveNum = PositiveNum + 1;
+        if (num4 > 0) 
+            PositiveNum = PositiveNum + 1;
+        if (num5 > 0)
+            PositiveNum = PositiveNum + 1;
+         
+            
+        if (num1 == 0) 
+            ZeroNum = ZeroNum + 1;
+        if (num2 == 0) 
+            ZeroNum = ZeroNum + 1;
+        if (num3 == 0) 
+            ZeroNum = ZeroNum + 1;
+        if (num4 == 0) 
+            ZeroNum = ZeroNum + 1;
+        if (num5 == 0) 
+            ZeroNum = ZeroNum + 1;
+         
+        System.out.println ("\n"); 
+ 
+        System.out.printf ("Negative numbers = %d\n", NegativeNum);
+        System.out.printf ("Positive numbers = %d\n", PositiveNum);
+        System.out.printf ("Zeros = %d\n", ZeroNum);
+ 
+    }
+}
