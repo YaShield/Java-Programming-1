@@ -2,36 +2,27 @@ Write an application that displays the integer equivalents of some uppercase let
 Display the integer equivalents of the following: A B C a b c 0 1 2 $ * + / and the blank character.
 [Hint: You can determine a character’s integer equivalent by preceding that character with (int), as in (int)'A']
 
-import java.util.Scanner;
- 
-public class Question8 
+
+public class Question7 
 {
-    public static void main (String [] args)
-    {
-         
-        Scanner input = new Scanner (System.in);
-         
-        int num; 
-        int digit1; 
-        int digit2; 
-        int digit3; 
-        int digit4; 
-        int digit5; 
-         
-        System.out.println(); 
-         
-        System.out.printf("Enter An Integer Number Consisting of Five Digits ");
-        num = input.nextInt();
-         
-        digit1 = num / 10000;
-        digit2 = (num % 10000)/1000;
-        digit3 = (num % 1000)/100;
-        digit4 = (num % 100)/10;
-        digit5 = num % 10;
-        
-        System.out.println();
-         
-        System.out.printf("%d   %d   %d   %d   %d\n", digit1, digit2, digit3,digit4, digit5);
-         
+     public static void main (String [] args) 
+     {
+ 
+       System.out.printf("The character %c has the value %d\n", 'A', ((int) 'A' ));
+       System.out.printf("The character %c has the value %d\n", 'B', ((int) 'B' ));
+       System.out.printf("The character %c has the value %d\n", 'C', ((int) 'C' ));
+       System.out.printf("The character %c has the value %d\n", 'a', ((int) 'a' ));
+       System.out.printf("The character %c has the value %d\n", 'b', ((int) 'b' ));
+       System.out.printf("The character %c has the value %d\n", 'c', ((int) 'c' ));
+       System.out.printf("The character %c has the value %d\n", '0', ((int) '0' ));
+       System.out.printf("The character %c has the value %d\n", '1', ((int) '1' ));
+       System.out.printf("The character %c has the value %d\n", '2', ((int) '2' ));
+       System.out.printf("The character %c has the value %d\n", '$', ((int) '$' ));
+       System.out.printf("The character %c has the value %d\n", '*', ((int) '*' ));
+       System.out.printf("The character %c has the value %d\n", '+', ((int) '+' ));
+       System.out.printf("The character %c has the value %d\n", '/', ((int) '/' ));
+       System.out.printf("The Blank character (' ') has the value %d\n", ( (int) ' ' ));
+ 
     }
+    
 }
